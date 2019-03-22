@@ -6,7 +6,9 @@ import flush from 'styled-jsx/server';
 export default class IntlDocument extends Document {
   static async getInitialProps(context) {
     const props = await super.getInitialProps(context);
-    const { req: { locale, localeDataScript } } = context;
+    const {
+      req: { locale, localeDataScript }
+    } = context;
     const { html, head, errorHtml, chunks } = context.renderPage();
     const styles = flush();
     return { html, head, errorHtml, chunks, styles, locale, localeDataScript };
@@ -16,7 +18,7 @@ export default class IntlDocument extends Document {
     return (
       <html>
         <Head>
-          <title>C - Collaborative listening on Spotify</title>
+          <title>Collaborative listening on Spotify</title>
           <meta
             name="description"
             content="A collaborative queue where you propose and vote what's going to play next. Use your Spotify account to log in"
