@@ -1,3 +1,3 @@
 module.exports = {
-  HOST: 'http://localhost:3000'
+  HOST: 'https://gentle-falls-81959.herokuapp.com/'
 };
