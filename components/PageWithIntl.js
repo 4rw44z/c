@@ -23,7 +23,7 @@ export default Page => {
       // In the browser, use the same values that the server serialized.
       const { req } = context;
       // todo: for some reason it is not props.initialProps, but props in the example
-      const { locale, messages } = req || window.__NEXT_DATA__.props.initialProps;
+      const { locale, messages } = req || window.__NEXT_DATA__.props.pageProps.initialProps;
 
       // Always update the current time on page load/transition because the
       // <IntlProvider> will be a new instance even with pushState routing.

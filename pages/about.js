@@ -15,12 +15,10 @@ const About = () => (
     </style>
 
     <p>
-      {/* This is a personal project by <a href="https://jmperezperez.com">José M. Pérez</a> that uses{' '} */}
       <a href="https://github.com/zeit/next.js">Next.js</a> and{' '}
       <a href="https://developer.spotify.com/web-api/web-api-connect-endpoint-reference/">
         Spotify's Connect API endpoints
       </a>
-      .
     </p>
   </Layout>
 );
